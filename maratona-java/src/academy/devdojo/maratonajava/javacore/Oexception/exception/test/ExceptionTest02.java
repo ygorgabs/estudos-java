@@ -18,6 +18,5 @@ public class ExceptionTest02 {
             System.err.println("Erro: " + e.getMessage());
             throw e;
         }
-
     }
 }
