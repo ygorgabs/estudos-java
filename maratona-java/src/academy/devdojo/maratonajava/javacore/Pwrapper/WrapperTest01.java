@@ -25,7 +25,5 @@ public class WrapperTest01 {
         Double doubleW = 1D;
         Character charW ='W';
         Boolean booleanW = false;
-
-
     }
 }
