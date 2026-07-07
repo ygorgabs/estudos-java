@@ -6,11 +6,17 @@ public class Manga implements Comparable<Manga> {
     private Long id;
     private String nome;
     private double preco;
+    private int quantidade;
 
     public Manga(long id, String nome, double preco) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
+    }
+
+    public Manga(Long id, String nome, double preco, int quantidade) {
+        this(id, nome, preco);
+        this.quantidade = quantidade;
     }
 
     public long getId() {
