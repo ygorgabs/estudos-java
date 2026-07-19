@@ -10,6 +10,6 @@ public class AppOptional2 {
                 3, "Ricardo",
                 4, "Rodrigo"
         ));
-        people.getNameById(4).ifPresent(s -> System.out.println(s.toUpperCase()));
+        people.getNameById(5).ifPresent(s -> System.out.println(s.toUpperCase()));
     }
 }

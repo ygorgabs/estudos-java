@@ -12,7 +12,7 @@ public class AppOptional4 {
         ));
 //        var name = people.getNameById(6).orElse("X");
 //        var name = people.getNameById(6).orElseGet(() -> "X");
-        var name = people.getNameById(3).orElseThrow(RuntimeException::new);
+        var name = people.getNameById(6).orElseThrow();
         System.out.println(name);
     }
 }
