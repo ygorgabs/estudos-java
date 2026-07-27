@@ -6,6 +6,7 @@ public class Produto {
     public enum Categoria {
         ELETRONICO, DECORACAO, LIMPEZA, MOVEIS, CONSTRUCAO
     }
+
     private String name;
     private double price;
     private Categoria categoria;
