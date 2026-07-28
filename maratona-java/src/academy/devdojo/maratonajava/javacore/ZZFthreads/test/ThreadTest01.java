@@ -33,6 +33,12 @@ class ThreadExampleRunnable implements Runnable {
             if (i % 100 == 0) {
                 System.out.println();
             }
+
+//            try {
+//                Thread.sleep(2000);
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
         }
     }
 }
@@ -44,11 +50,12 @@ public class ThreadTest01 {
 //        ThreadExample t3 = new ThreadExample('C');
 //        ThreadExample t4 = new ThreadExample('D');
 
-        Thread t1 = new Thread(new ThreadExampleRunnable('A'));
+        Thread t1 = new Thread(new ThreadExampleRunnable('A'),"Thread A" );
         Thread t2 = new Thread(new ThreadExampleRunnable('B'));
         Thread t3 = new Thread(new ThreadExampleRunnable('C'));
         Thread t4 = new Thread(new ThreadExampleRunnable('D'));
 
+        t4.setPriority(Thread.MAX_PRIORITY);
         t1.start();
         t2.start();
         t3.start();
